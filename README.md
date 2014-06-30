@@ -1,8 +1,3 @@
-WWDCSessions
-============
-
-**All WWDC sessions in readable format.**
-
 How to use it:
 
 * Fork it.
@@ -10,3 +5,5 @@ How to use it:
 * Watch WWDC video.
 * Mark checkbox in `checkbox-marks.js` file.
 * Commit to your fork.
+
+**[Online preview](http://dodonov.github.io/wwdc-sessions.html).**
