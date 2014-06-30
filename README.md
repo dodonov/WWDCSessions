@@ -6,4 +6,4 @@ How to use it:
 * Mark checkbox in `checkbox-marks.js` file.
 * Commit to your fork.
 
-**[Online preview](http://dodonov.github.io/wwdc-sessions.html).**
+[Online preview](http://dodonov.github.io/wwdc-sessions.html).
