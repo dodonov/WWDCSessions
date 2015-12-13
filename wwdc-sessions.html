@@ -12,11 +12,14 @@
 
         <script>
             
+        var watched = 0;
+
             function checkCheckboxes() {
 
                 for (var key in seen) {
                     if (seen.hasOwnProperty(key) && seen[key]) {
                         $("#checkbox-"+key).text("X");
+                        watched++;
                     }
                 }
 
@@ -33,6 +36,8 @@
                 $(".year-title").click(function() {
                     $(this).next(".year").slideToggle();
                 });
+
+                $('.watched').html('Watched ' + watched + ' videos');
 
             });
         </script>
@@ -104,6 +109,7 @@
 
 <a href="https://github.com/dodonov/WWDCSessions"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
+<div class="watched"></div>
 <div class="track-title">Special Events</div>
 <div class="track">
 
@@ -473,7 +479,7 @@
 <div class="session" title="The app distribution pipeline is becoming more powerful and flexible. Learn to create full featured apps that are delivered to users devices with new App Thinning features such as slicing, ODR and Bitcode. See how to integrate these new features into your continuous integration and testing processes, and discover workflows for creating on-demand, tailored content."><div class="session-list">[<span id="checkbox-2015-404"> </span>] 404. </div><div class="session-title">App Thinning in Xcode (iOS, OS X)</div></div>
 <div class="session" title="Learn about the new features in Xcode playgrounds such as inline results, auxiliary sources and resources, multiple pages, and markup for formatted text. Find out how to explore programming problems in a playground, and create engaging experiences for teaching and learning."><div class="session-list">[<span id="checkbox-2015-405"> </span>] 405. </div><div class="session-title">Authoring Rich Playgrounds (iOS, OS X)</div></div>
 <div class="session" title="Xcode 7 introduces new UI testing features fully integrated into the IDE. Learn about the new APIs and how UI testing fits in with existing testing features in Xcode. See how to get started by recording your app, and how to efficiently craft and maintain UI tests."><div class="session-list">[<span id="checkbox-2015-406"> </span>] 406. </div><div class="session-title">UI Testing in Xcode (iOS, OS X, watchOS)</div></div>
-<div class="session" title="Apps that stand out must be attractive, intuitive, and easy to use. Interface Builder experts will give you the skills to turn your idea into a world class app. Learn to use the new stacks feature, create adaptable interfaces, employ asset catalogs, and design custom UI to build an outstanding app for Mac, iPhone, iPad and Apple Watch."><div class="session-list">[<span id="checkbox-2015-407"> </span>] 407. </div><div class="session-title">Implementing UI Designs in Interface Builder (iOS, OS X, watchOS)</div></div>
+<div class="session" title="Apps that stand out must be attractive, intuitive, and easy to use. Interface Builder experts will give you the skills to turn your idea into a world class app. Learn to use the new stacks feature, create adaptable interfaces, employ asset catalogs, and design custom UI to build an outstanding app for Mac, iPhone, iPad and Apple Watch."><div class="session-list">[<span id="checkbox-2015-407"></span>] 407. </div><div class="session-title">Implementing UI Designs in Interface Builder (iOS, OS X, watchOS)</div></div>
 <div class="session" title="At the heart of Swift's design are two incredibly powerful ideas: protocol-oriented programming and first class value semantics. Each of these concepts benefit predictability, performance, and productivity, but together they can change the way we think about programming. Find out how you can apply these ideas to improve the code you write."><div class="session-list">[<span id="checkbox-2015-408"> </span>] 408. </div><div class="session-title">Protocol-Oriented Programming in Swift (iOS, OS X, watchOS)</div></div>
 <div class="session" title="Hear from the experts about how you can write faster Swift code and use Instruments to identify performance bottlenecks. Dive deep into specific techniques that will help you produce the most efficient code possible."><div class="session-list">[<span id="checkbox-2015-409"> </span>] 409. </div><div class="session-title">Optimizing Swift Performance (iOS, OS X, watchOS)</div></div>
 <div class="session" title="Xcode 7 includes new code coverage features to help you design a powerful test harness for your app. Learn to use advanced configuration options, custom trigger scripts, and APIs to extend Xcode Server. See how to take advantage of Xcode 7's new UI testing features in your continuous integration strategy."><div class="session-list">[<span id="checkbox-2015-410"> </span>] 410. </div><div class="session-title">Continuous Integration and Code Coverage in Xcode (iOS, OS X, watchOS)</div></div>
